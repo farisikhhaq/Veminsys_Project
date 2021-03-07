@@ -34,20 +34,25 @@
                             {{ csrf_field() }}
 
                             <div class="form-group">
-                                <label for="nama">Nama</label>
-                                <input class="form-control" type="text" name="nama" value="{{ old('nama') }}">
+                                <label for="nama">No ID</label>
+                                <input class="form-control" type="number" name="noid" value="{{ old('nama') }}">
                             </div>
                             <div class="form-group">
-                                <label for="pekerjaan">Pekerjaan</label>
-                                <input class="form-control" type="text" name="pekerjaan"
+                                <label for="pekerjaan">No SIM</label>
+                                <input class="form-control" type="number" name="nosim"
                                     value="{{ old('pekerjaan') }}">
                             </div>
                             <div class="form-group">
-                                <label for="usia">Usia</label>
-                                <input class="form-control" type="text" name="usia" value="{{ old('usia') }}">
+                                <label for="usia">Nama</label>
+                                <input class="form-control" type="text" name="nama" value="{{ old('usia') }}">
                             </div>
                             <div class="form-group">
-                                <input class="btn btn-primary" type="submit" value="Proses">
+                                <label for="usia">Tanggal Lahir</label>
+                                <input class="form-control" type="datetime" name="ttl" value="{{ old('usia') }}">
+                            </div>
+                            <div class="form-group">
+                                <label for="usia">Alamat</label>
+                                <input class="form-control" type="text" name="alamat" value="{{ old('usia') }}">
                             </div>
                         </form>
                     </div>
