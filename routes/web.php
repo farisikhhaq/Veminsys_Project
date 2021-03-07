@@ -14,8 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/data', function () {
+    return view('userdata');
+});
 Route::get('/', function () {
-    return view('user');
+    return view('userpage');
 });
 
 Route::get('/input', [DataUserController::class, 'input']);
