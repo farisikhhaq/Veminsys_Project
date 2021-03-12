@@ -10,7 +10,7 @@ class UserController extends Controller
     public $noid;
     private $nosim;
     protected $nama, $umur, $alamat;
-
+    
     public function __construct($noid, $nosim, $nama, $umur, $alamat)
     {
         $this->noid     = $noid;
@@ -37,5 +37,9 @@ class UserController extends Controller
     public function getNoSim(){
         return $this->nosim;
     }
+    public function store(Request $request){
+        dd($request->all());
+    }
 
+    
 }
