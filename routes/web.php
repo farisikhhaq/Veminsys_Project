@@ -1,6 +1,8 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\DataUserController;
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,7 +20,7 @@ Route::get('/data', function () {
     return view('userdata');
 });
 Route::get('/', function () {
-    return view('userpage');
+    return view('auth.login');
 });
 
 Route::get('/input', [DataUserController::class, 'input']);
@@ -27,3 +29,8 @@ Route::get('/proses', [DataUserController::class, 'proses']);
 Route::get('/user', function ($id) {
     return view('user');
 });
+
+// Route::resource('post', [PostController::class]);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

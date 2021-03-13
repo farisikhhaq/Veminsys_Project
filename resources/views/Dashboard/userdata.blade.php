@@ -45,23 +45,15 @@
                                             src="{{asset('User/dist/img/user4-128x128.jpg')}}" alt="User profile picture">
                                     </div>
 
-                                    <h3 class="profile-username text-center">Nina Mcintire</h3>
-
-                                    <p class="text-muted text-center">Software Engineer</p>
+                                    <h3 class="profile-username text-center">Nama</h3>
 
                                     <ul class="list-group list-group-unbordered mb-3">
                                         <li class="list-group-item">
-                                            <b>Followers</b> <a class="float-right">1,322</a>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <b>Following</b> <a class="float-right">543</a>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <b>Friends</b> <a class="float-right">13,287</a>
+                                            <b>No Sim</b> <a class="float-right">1,322</a>
                                         </li>
                                     </ul>
 
-                                    <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a>
+                                    <a href="#" class="btn btn-primary btn-block"><b>Update Data</b></a>
                                 </div>
                                 <!-- /.card-body -->
                             </div>
@@ -74,7 +66,7 @@
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
-                                    <strong><i class="fas fa-book mr-1"></i> Education</strong>
+                                    <strong><i class="fas fa-book mr-1"></i> Tanggal Lahir</strong>
 
                                     <p class="text-muted">
                                         B.S. in Computer Science from the University of Tennessee at Knoxville
@@ -82,7 +74,7 @@
 
                                     <hr>
 
-                                    <strong><i class="fas fa-map-marker-alt mr-1"></i> Location</strong>
+                                    <strong><i class="fas fa-map-marker-alt mr-1"></i> Alamat</strong>
 
                                     <p class="text-muted">Malibu, California</p>
 
@@ -99,11 +91,6 @@
                                     </p>
 
                                     <hr>
-
-                                    <strong><i class="far fa-file-alt mr-1"></i> Notes</strong>
-
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                                        fermentum enim neque.</p>
                                 </div>
                                 <!-- /.card-body -->
                             </div>

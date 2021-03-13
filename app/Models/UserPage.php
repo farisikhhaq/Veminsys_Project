@@ -6,8 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class UserPage extends Model
 {
-    protected $table = "user_pages";
+    protected $table = "user_page";
     protected $primarykey = "nosim";
-    protected $fillable = ['id','nosim','nama','tgllahir' ,'alamat'];
-
+    protected $fillable = ['id','nosim','nama','tgl_lahir' ,'alamat'];
 }

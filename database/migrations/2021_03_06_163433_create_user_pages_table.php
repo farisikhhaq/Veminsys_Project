@@ -13,16 +13,15 @@ class CreateUserPagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_pages', function (Blueprint $table) {
+        Schema::create('user_page', function (Blueprint $table) {
             $table->id();
             $table->char('nosim',12);
             $table->string('nama');
-            $table->date('tgllahir');
+            $table->date('tgl_lahir');
             $table->string('alamat');
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      *
@@ -30,6 +29,6 @@ class CreateUserPagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_pages');
+        Schema::dropIfExists('user_page');
     }
 }

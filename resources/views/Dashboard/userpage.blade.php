@@ -26,12 +26,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0">Menu User Veminsys</h1>
+                            <h3 class="m-0">Selamat Datang di Sistem Informasi Manajemen Kendaraan Bermontor</h3>
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active">Starter Page</li>
+                                <li class="breadcrumb-item active">Welcome</li>
                             </ol>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
@@ -45,39 +45,35 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="card">
+                                <div class="card-header">
+                                    <h5 class="m-0">Cek Kendaraan</h5>
+                                </div>
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                                    <h6 class="card-title">Spesifikasi dan Detail Kendaraan Yang Dimiliki</h6>
 
-                                    <p class="card-text">
-                                        Some quick example text to build on the card title and make up the bulk of the
-                                        card's
-                                        content.
-                                    </p>
-
-                                    <a href="#" class="card-link">Card link</a>
-                                    <a href="#" class="card-link">Another link</a>
+                                    <p class="card-text">Mengetahui dan Mengecek Spesifikasi Kendaraan Yang dimiliki</p>
+                                    <a href="#" class="btn btn-primary">Yuk Cek ! </a>
                                 </div>
                             </div>
 
                             <div class="card card-primary card-outline">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-
-                                    <p class="card-text">
-                                        Some quick example text to build on the card title and make up the bulk of the
-                                        card's
-                                        content.
-                                    </p>
-                                    <a href="#" class="card-link">Card link</a>
-                                    <a href="#" class="card-link">Another link</a>
+                                <div class="card-header">
+                                    <h5 class="m-0">History Kendaraan</h5>
                                 </div>
-                            </div><!-- /.card -->
+                                <div class="card-body">
+                                    <h6 class="card-title">Special title treatment</h6>
+
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional
+                                        content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
                         </div>
                         <!-- /.col-md-6 -->
                         <div class="col-lg-6">
                             <div class="card">
                                 <div class="card-header">
-                                    <h5 class="m-0">Featured</h5>
+                                    <h5 class="m-0">E-Toll & Paylater</h5>
                                 </div>
                                 <div class="card-body">
                                     <h6 class="card-title">Special title treatment</h6>
@@ -90,7 +86,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                             <div class="card card-primary card-outline">
                                 <div class="card-header">
-                                    <h5 class="m-0">Featured</h5>
+                                    <h5 class="m-0">User Data</h5>
                                 </div>
                                 <div class="card-body">
                                     <h6 class="card-title">Special title treatment</h6>
@@ -101,8 +97,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 </div>
                             </div>
                         </div>
+
                         <!-- /.col-md-6 -->
                     </div>
+                    
                     <!-- /.row -->
                 </div><!-- /.container-fluid -->
             </div>
