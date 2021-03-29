@@ -15,22 +15,18 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/data', function () {
-    return view('userdata');
-});
+Auth::routes();
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/', function () {
     return view('auth.login');
 });
-
-Route::get('/input', [DataUserController::class, 'input']);
-Route::get('/proses', [DataUserController::class, 'proses']);
-
-Route::get('/user', function ($id) {
-    return view('user');
+Route::resource('post', PostController::class);
+Route::get('/data', function () {
+    return view('Dashboard.userdata');
 });
-
-// Route::resource('post', [PostController::class]);
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/konten', function () {
+    return view('landingpage.konten');
+});
+Route::get('/db', function () {
+    return view('Dashboard.DashboardUtama');
+});

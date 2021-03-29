@@ -1,0 +1,602 @@
+@font-face {
+    font-family: SourceSerifProBlack;
+    src: url(Font/SourceSerifProBlack.otf);
+    font-family: CardoBold;
+    src: url(Font/CardoBold.ttf);
+    font-family: SourceSerifProRegular;
+    src: url(Font/SourceSerifProRegular.otf)
+}
+
+@font-face {
+    font-family: HKGroteskBold;
+    src: url(Font/HKGroteskBold.otf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: SourceSerifProRegular;
+    text-align: justify;
+}
+
+
+/* Headbar */
+
+nav {
+    z-index: 2000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: .5s;
+    font-family: HKGroteskBold;
+}
+
+nav.black {
+    background: rgba(73, 73, 73, 0.8);
+    height: 80px;
+    padding: 10px 50px;
+}
+
+nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    line-height: 80px;
+    color: #ffffff;
+    padding: 5px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+nav black li a {
+    color: #fff;
+    line-height: 60px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #fff;
+    background: #f00;
+}
+
+
+/* Konten */
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.jumbotron {
+    background-color: rgb(69, 163, 192);
+    color: rgb(0, 0, 0);
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+}
+
+.container-fluid {
+    padding: 60px 80px;
+}
+
+.bg-grey {
+    background-color: #f6f6f6;
+}
+
+.logo-small {
+    color: rgb(69, 163, 192);
+    font-size: 50px;
+}
+
+.logo {
+    color: rgb(69, 163, 192);
+    font-size: 200px;
+}
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 30%;
+    margin-bottom: 10px;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+    color: black;
+}
+
+.carousel-indicators li {
+    border-color: rgb(69, 163, 192);
+}
+
+.carousel-indicators li.active {
+    background-color: rgb(69, 163, 192);
+}
+
+.panel-heading {
+    color: #fff !important;
+    background-color: steelblue !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: steelblue;
+}
+
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+}
+
+
+/* Kontak */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f6f6f6;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.containerKontak {
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.containerKontak .contactInfo {
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background: rgb(69, 163, 192);
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 25px rgb(69, 163, 192);
+}
+
+.containerKontak .contactInfo h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.containerKontak .contactInfo ul.info {
+    position: relative;
+    margin: 20px 0;
+}
+
+.containerKontak .contactInfo ul.info li {
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+}
+
+.containerKontak .contactInfo ul.info li span:nth-child(1) {
+    width: 30px;
+    min-width: 30px;
+}
+
+.containerKontak .contactInfo ul.info li span:nth-child(1) img {
+    max-width: 100%;
+    filter: invert(1);
+}
+
+.containerKontak .contactInfo ul.info li span:nth-child(2) {
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+.containerKontak .contactInfo ul.sci {
+    position: relative;
+    display: flex;
+}
+
+.containerKontak .contactInfo ul.sci li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+.containerKontak .contactInfo ul.sci li a {
+    text-decoration: none;
+}
+
+.containerKontak .contactInfo ul.sci li a img {
+    filter: invert(1);
+}
+
+.containerKontak .contactForm {
+    position: absolute;
+    padding: 70px 50px;
+    padding-left: 250px;
+    margin-left: 150px;
+    width: calc(100% - 150px);
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 50px 50px rgb(69, 163, 192);
+}
+
+.containerKontak .contactForm h2 {
+    color: #0f3959;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.containerKontak .contactForm .formBox {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.containerKontak .contactForm .formBox .inputBox {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.containerKontak .contactForm .formBox .inputBox.w50 {
+    width: 47%;
+}
+
+.containerKontak .contactForm .formBox .inputBox.w100 {
+    width: 100%;
+}
+
+.containerKontak .contactForm .formBox .inputBox input,
+.containerKontak .contactForm .formBox .inputBox textarea {
+    width: 100%;
+    resize: none;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(69, 163, 192);
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #777;
+}
+
+.containerKontak .contactForm .formBox .inputBox textarea {
+    height: 120px;
+}
+
+.containerKontak .contactForm .formBox .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    pointer-events: none;
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+.containerKontak .contactForm .formBox .inputBox input:focus~span,
+.containerKontak .contactForm .formBox .inputBox input:valid~span,
+.containerKontak .contactForm .formBox .inputBox textarea:focus~span,
+.containerKontak .contactForm .formBox .inputBox textarea:valid~span {
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: rgb(69, 163, 192);
+    font-weight: 500;
+}
+
+.containerKontak .contactForm .formBox .inputBox input[type="submit"] {
+    position: relative;
+    cursor: pointer;
+    background: rgb(69, 163, 192);
+    color: #fff;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+}
+
+.containerKontak .contactForm .formBox .inputBox input[type="submit"]:hover {
+    background: rgb(69, 163, 192);
+}
+
+
+/* Kodingan responsif Kontak */
+
+@media(max-width: 1200px) {
+    .containerKontak {
+        width: 90%;
+        min-width: auto;
+        margin: 20px;
+        box-shadow: 0 20px 50px rgb(69, 163, 192);
+    }
+    .containerKontak .contactInfo {
+        top: 0;
+        height: 550px;
+        position: relative;
+        box-shadow: none;
+    }
+    .containerKontak .contactForm {
+        position: relative;
+        width: calc(100% - 350px);
+        padding-left: 0;
+        margin-left: 0;
+        padding: 40px;
+        height: 550px;
+        box-shadow: none;
+    }
+}
+
+@media(max-width: 991px) {
+    section {
+        background: #fff38e;
+    }
+    section::before {
+        display: none;
+    }
+    .containerKontak {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .containerKontak .contactForm {
+        width: 100%;
+        height: auto;
+    }
+    .containerKontak .contactInfo {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+    }
+    .containerKontak .contactInfo ul.sci {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width: 600px) {
+    .containerKontak .contactForm {
+        padding: 25px;
+    }
+    .containerKontak .contactInfo {
+        padding: 25px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .containerKontak .contactinfo ul.sci {
+        margin-top: 40px;
+    }
+    .containerKontak .contactForm .formBox .inputBox.w50 {
+        width: 100%;
+    }
+}
+
+
+/* Footer */
+
+.content1 {
+    position: relative;
+    margin: 130px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.content1 .text {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #202020;
+}
+
+.content1 .p {
+    font-size: 2.1875rem;
+    font-weight: 600;
+    color: #202020;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: #111;
+}
+
+.main-content {
+    display: flex;
+}
+
+.main-content .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.box h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .content {
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+.box .content:before {
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+}
+
+.box .content:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: #20b6f1;
+    top: -10px;
+}
+
+.left .content p {
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+.left .content .social {
+    margin: 20px 0 0 0;
+}
+
+.left .content .social a {
+    padding: 0 2px;
+}
+
+.left .content .social a span {
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.left .content .social a span:hover {
+    background: #f12020;
+}
+
+.center .content .fas {
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.center .content .fas:hover {
+    background: #f12020;
+}
+
+.center .content .text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.center .content .phone {
+    margin: 15px 0;
+}
+
+.right form .text {
+    font-size: 1.5rem;
+    margin-bottom: 2px;
+    color: #656565;
+}
+
+.bottom center {
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
+}
+
+.bottom center span {
+    color: #656565;
+}
+
+.bottom center a {
+    color: #f12020;
+    text-decoration: none;
+}
+
+.bottom center a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+    footer {
+        position: relative;
+        bottom: 0px;
+    }
+    .main-content {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .main-content .box {
+        margin: 5px 0;
+    }
+}

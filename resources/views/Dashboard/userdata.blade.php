@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     @include('template.head')
@@ -45,11 +45,11 @@
                                             src="{{asset('User/dist/img/user4-128x128.jpg')}}" alt="User profile picture">
                                     </div>
 
-                                    <h3 class="profile-username text-center">Nama</h3>
+                                    <h3 class="profile-username text-center">{{Auth::user()->name}}</h3>
 
                                     <ul class="list-group list-group-unbordered mb-3">
                                         <li class="list-group-item">
-                                            <b>No Sim</b> <a class="float-right">1,322</a>
+                                            <b>No Sim</b> <a class="float-right">{{Auth::user()->username}}</a>
                                         </li>
                                     </ul>
 
@@ -69,17 +69,19 @@
                                     <strong><i class="fas fa-book mr-1"></i> Tanggal Lahir</strong>
 
                                     <p class="text-muted">
-                                        B.S. in Computer Science from the University of Tennessee at Knoxville
+                                        {{Auth::user()->tgl_lahir}}
                                     </p>
-
                                     <hr>
-
                                     <strong><i class="fas fa-map-marker-alt mr-1"></i> Alamat</strong>
 
-                                    <p class="text-muted">Malibu, California</p>
+                                    <p class="text-muted">{{Auth::user()->alamat}}</p>
 
                                     <hr>
+                                    <strong><i class="fas fa-map-marker-alt mr-1"></i> Pekerjaan</strong>
 
+                                    <p class="text-muted">{{Auth::user()->pekerjaan }}</p>
+
+                                    <hr>
                                     <strong><i class="fas fa-pencil-alt mr-1"></i> Skills</strong>
 
                                     <p class="text-muted">
