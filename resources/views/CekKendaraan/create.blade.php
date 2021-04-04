@@ -22,6 +22,14 @@
                     <form method="post" action="{{ route('cekkendaraan.store') }}" id="myForm">
                         @csrf
                         <div class="form-group">
+                            <label for="platnomer">Plat Nomer</label>
+                            <input type="text" name="platnomer" class="form-control" id="platnomer" ariadescribedby="platnomer">
+                        </div>
+                        <div class="form-group">
+                            <label for="namakendaraan">Nama Kendaraan</label>
+                            <input type="text" name="namakendaraan" class="form-control" id="namakendaraan" ariadescribedby="namakendaraan">
+                        </div>
+                        <div class="form-group">
                             <label for="no_mesin">No Mesin</label>
                             <input type="text" name="no_mesin" class="form-control" id="no_mesin" ariadescribedby="no_mesin">
                         </div>

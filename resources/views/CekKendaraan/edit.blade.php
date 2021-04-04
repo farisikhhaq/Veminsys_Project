@@ -22,6 +22,14 @@
                         @csrf
                         @method('PUT')
                         <div class="form-group">
+                            <label for="platnomer">Plat Nomer</label>
+                            <input type="text" name="platnomer" class="form-control" id="platnomer" value="{{ $cekkendaraan->platnomer }}"aria-describedby="platnomer">
+                        </div>
+                        <div class="form-group">
+                            <label for="namakendaraan">No Mesin</label>
+                            <input type="text" name="namakendaraan" class="form-control" id="namakendaraan" value="{{ $cekkendaraan->namakendaraan }}"aria-describedby="namakendaraan">
+                        </div>
+                        <div class="form-group">
                             <label for="no_mesin">No Mesin</label>
                             <input type="text" name="no_mesin" class="form-control" id="no_mesin" value="{{ $cekkendaraan->no_mesin }}"aria-describedby="no_mesin">
                         </div>

@@ -12,6 +12,8 @@ class cekkendaraan extends Model
 
     protected $fillable = [
         'platnomer',
+        'namakendaraan',
+        'platnomer',
         'no_mesin',
         'selinder',
         'merk',

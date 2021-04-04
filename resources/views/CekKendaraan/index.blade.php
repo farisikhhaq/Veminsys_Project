@@ -6,9 +6,9 @@
                 <h2>JURUSAN TEKNOLOGI INFORMASI-POLITEKNIK NEGERI MALANG</h2>
             </div>
             <div class="float-right my-2">
-                <a class="btn btn-success" href="{{ route('CekKendaraan.create') }}"> Menambah Kendaraan</a>
-            </div>
-            <form class="form-inline my-2 my-lg-0 mr-4" type="get" action="{{url ('CekKendaraan')}}">
+                <a class="btn btn-success" href="{{ route('cekkendaraan.create') }}"> Menambah Kendaraan</a>
+            </div> 
+            <form class="form-inline my-2 my-lg-0 mr-4" type="get" action="{{url ('cekkendaraan')}}">
                 <input value="{{Request::get('keyword')}}" class="form-control mr-sm-2" name ="keyword" type="search" placeholder="Nama" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
               </form>

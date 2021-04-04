@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CekKendaraanController;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\DataUserController;
 use App\Http\Controllers\PostController;
@@ -30,3 +31,8 @@ Route::get('/konten', function () {
 Route::get('/db', function () {
     return view('Dashboard.DashboardUtama');
 });
+
+Route::get('/cekkendaraan', function () {
+    return view('CekKendaraan.index');
+});
+Route::resource('cekkendaraan', CekKendaraanController::class);
