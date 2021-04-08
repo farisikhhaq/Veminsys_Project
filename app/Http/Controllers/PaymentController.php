@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use GuzzleHttp\Client;
+use GuzzleHttp\Exception\RequestException;
 use Illuminate\Http\Request;
 
 class PaymentController
@@ -9,7 +10,7 @@ class PaymentController
     private $noPayment,
             $tglPayment;
     protected $passwordGanda;
-    
+
     public function __construct($noPayment, $tglPayment, $passwordGanda)
     {
         $this->noPayment = $noPayment;

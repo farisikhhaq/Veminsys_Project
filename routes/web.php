@@ -3,6 +3,7 @@
 use App\Http\Controllers\CekKendaraanController;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\DataUserController;
+use App\Http\Controllers\HistoryKendaraanController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
@@ -35,4 +36,8 @@ Route::get('/db', function () {
 Route::get('/cekkendaraan', function () {
     return view('CekKendaraan.index');
 });
+Route::get('/cekkendaraan', function () {
+    return view('HistoryKendaraan.index');
+});
 Route::resource('cekkendaraan', CekKendaraanController::class);
+Route::resource('historykendaraan', HistoryKendaraanController::class);

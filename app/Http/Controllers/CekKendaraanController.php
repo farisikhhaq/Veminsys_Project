@@ -107,7 +107,7 @@ class CekKendaraanController extends Controller
         ]);
         cekkendaraan::find($platnomer)->update($request->all());
         return redirect()->route('CekKendaraan.index')
-            ->with('success', 'Mahasiswa Berhasil Diupdate');
+            ->with('success', 'Kendaraan Berhasil Diupdate');
     }
 
     /**

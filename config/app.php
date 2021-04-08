@@ -1,7 +1,10 @@
 <?php
 
 return [
-
+    /* Tambahan */
+    'Form'      => Collective\Html\FormFacade::class,
+    'Html'      => Collective\Html\HtmlFacade::class,
+    'Flash'     => Laracasts\Flash\Flash::class,
     /*
     |--------------------------------------------------------------------------
     | Application Name

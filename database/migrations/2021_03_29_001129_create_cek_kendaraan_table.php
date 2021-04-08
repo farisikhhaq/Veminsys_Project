@@ -19,7 +19,7 @@ class CreateCekKendaraanTable extends Migration
             $table->string('namakendaraan',10 );
             $table->string('no_mesin',17);
             $table->string('selinder')->unique();
-            $table->date('merk');
+            $table->string('merk');
             $table->string('type');
             $table->string('warna');
             $table->string('bahan_bakar');
