@@ -9,7 +9,6 @@
                 <div class="card-body">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"><b>Plat Nomer: </b>{{ $cekkendaraan->platnomer }}</li>
-                        <li class="list-group-item"><b>Plat Nomer: </b>{{ $cekkendaraan->namakendaraan }}</li>
                         <li class="list-group-item"><b>No_Mesin: </b>{{ $cekkendaraan->no_mesin }}</li>
                         <li class="list-group-item"><b>Selinder: </b>{{$cekkendaraan->selinder}}</li>
                         <li class="list-group-item"><b>Merk: </b>{{ $cekkendaraan->merk }}</li>

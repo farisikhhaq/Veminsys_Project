@@ -14,8 +14,7 @@ class CreateCekKendaraanTable extends Migration
     public function up()
     {
         Schema::create('cek_kendaraan', function (Blueprint $table) {
-            $table->id('id_kendaraan');
-            $table->string('platnomer',9)->unique();
+            $table->string('platnomer',9)->primary();
             $table->string('namakendaraan',10 );
             $table->string('no_mesin',17);
             $table->string('selinder')->unique();

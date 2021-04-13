@@ -15,8 +15,7 @@ class CreateHistoryKendaraansTable extends Migration
     public function up()
     {
         Schema::create('history_kendaraans', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('platnomer',9)->unique();
+            $table->string('noRekap')->primary();
             $table->string('jenis_kendaraan');
             $table->text('laka_kecelakaan');
             $table->string('pelanggaran');

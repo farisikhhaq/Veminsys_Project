@@ -69,8 +69,8 @@ class CekKendaraanController extends Controller
      */
     public function show($platnomer)
     {
-        $Mahasiswa = cekkendaraan::find($platnomer);
-        return view('CekKendaraan.detail', compact('Mahasiswa'));
+        $kendaraan = cekkendaraan::find($platnomer);
+        return view('CekKendaraan.detail', compact('kendaraan'));
     }
 
     /**

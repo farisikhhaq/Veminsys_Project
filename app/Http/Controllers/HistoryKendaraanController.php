@@ -9,15 +9,15 @@ class HistoryKendaraanController extends Controller
     public function index(Request $request)
     {
         $keyword = $request->get('keyword');
-        $kendaraan = HistoryKendaraan::all();
+        $HistoryKendaraan = HistoryKendaraan::all();
 
         if($keyword){
-            $kendaraan = HistoryKendaraan::where("merk","LIKE", "%$keyword%")->get();
+            $HistoryKendaraan = HistoryKendaraan::where("jenis","LIKE", "%$keyword%")->get();
             $posts = HistoryKendaraan::orderBy('id_kendaraan', 'desc')->paginate(3); 
         }
         
-        $posts = HistoryKendaraan::orderBy('id_kendaraan', 'desc')->paginate(3); 
-        return view('HistoryKendaraan.index', compact('kendaraan','posts','keyword'));
+        $posts = HistoryKendaraan::orderBy('id', 'desc')->paginate(3); 
+        return view('HistoryKendaraan.index', compact('HistoryKendaraan','posts','keyword'));
     }
 
     /**
@@ -40,15 +40,11 @@ class HistoryKendaraanController extends Controller
     {
         $request->validate([
             'platnomer' => 'required',
-            'namakendaraan' => 'required',
-            'no_mesin' => 'required',
-            'selinder' => 'required',
-            'merk' => 'required',
-            'type' => 'required',
-            'warna' => 'required',
-            'bahan_bakar' => 'required',
-            'kilometer' => 'required',
-            'tahun' => 'required',
+            'jenis_kendaraan' => 'required',
+            'laka_kecelakaan' => 'required',
+            'pelanggaran' => 'required',
+            'tanggal_kejadian' => 'required',
+            'tempat_kejadian' => 'required',
         ]);
         HistoryKendaraan::create($request->all());
         return redirect()->route('HistoryKendaraan.index')
@@ -63,8 +59,8 @@ class HistoryKendaraanController extends Controller
      */
     public function show($platnomer)
     {
-        $Mahasiswa = HistoryKendaraan::find($platnomer);
-        return view('HistoryKendaraan.detail', compact('Mahasiswa'));
+        $HistoryKendaraan = HistoryKendaraan::find($platnomer);
+        return view('HistoryKendaraan.detail', compact('HistoryKendaraan'));
     }
 
     /**
@@ -75,8 +71,8 @@ class HistoryKendaraanController extends Controller
      */
     public function edit($platnomer)
     {
-        $kendaraan = HistoryKendaraan::find($platnomer);
-        return view('HistoryKendaraan.edit', compact('kendaraan'));
+        $HistoryKendaraan = HistoryKendaraan::find($platnomer);
+        return view('HistoryKendaraan.edit', compact('HistoryKendaraan'));
     }
 
     /**
@@ -90,14 +86,11 @@ class HistoryKendaraanController extends Controller
     {
         $request->validate([
             'platnomer' => 'required',
-            'no_mesin' => 'required',
-            'selinder' => 'required',
-            'merk' => 'required',
-            'type' => 'required',
-            'warna' => 'required',
-            'bahan_bakar' => 'required',
-            'kilometer' => 'required',
-            'tahun' => 'required',
+            'jenis_kendaraan' => 'required',
+            'laka_kecelakaan' => 'required',
+            'pelanggaran' => 'required',
+            'tanggal_kejadian' => 'required',
+            'tempat_kejadian' => 'required',
         ]);
         HistoryKendaraan::find($platnomer)->update($request->all());
         return redirect()->route('HistoryKendaraan.index')

@@ -8,19 +8,19 @@
                 </div>
                 <div class="card-body">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><b>Plat Nomer: </b>{{ $cekkendaraan->platnomer }}</li>
-                        <li class="list-group-item"><b>Nama Kendaraan: </b>{{ $cekkendaraan->namakendaraan }}</li>
-                        <li class="list-group-item"><b>No_Mesin: </b>{{ $cekkendaraan->no_mesin }}</li>
-                        <li class="list-group-item"><b>Selinder: </b>{{$cekkendaraan->selinder}}</li>
-                        <li class="list-group-item"><b>Merk: </b>{{ $cekkendaraan->merk }}</li>
-                        <li class="list-group-item"><b>Type: </b>{{ $cekkendaraan->type }}</li>
-                        <li class="list-group-item"><b>Warna: </b>{{$cekkendaraan->warna}}</li>
-                        <li class="list-group-item"><b>Bahan Bakar: </b>{{$cekkendaraan->bahan_bakar}}</li>
-                        <li class="list-group-item"><b>Kilometer: </b>{{ $cekkendaraan->kilometer }}</li>
-                        <li class="list-group-item"><b>Tahun: </b>{{$cekkendaraan->tahun}}</li>
+                        <li class="list-group-item"><b>Plat Nomer: </b>{{ $kendaraan->platnomer }}</li>
+                        <li class="list-group-item"><b>Nama Kendaraan: </b>{{ $kendaraan->namakendaraan }}</li>
+                        <li class="list-group-item"><b>No_Mesin: </b>{{ $kendaraan->no_mesin }}</li>
+                        <li class="list-group-item"><b>Selinder: </b>{{$kendaraan->selinder}}</li>
+                        <li class="list-group-item"><b>Merk: </b>{{ $kendaraan->merk }}</li>
+                        <li class="list-group-item"><b>Type: </b>{{ $kendaraan->type }}</li>
+                        <li class="list-group-item"><b>Warna: </b>{{$kendaraan->warna}}</li>
+                        <li class="list-group-item"><b>Bahan Bakar: </b>{{$kendaraan->bahan_bakar}}</li>
+                        <li class="list-group-item"><b>Kilometer: </b>{{ $kendaraan->kilometer }}</li>
+                        <li class="list-group-item"><b>Tahun: </b>{{$kendaraan->tahun}}</li>
                     </ul>
                 </div>
-                <a class="btn btn-success mt-3" href="{{ route('CekKendaraan.index') }}">Kembali</a>
+                <a class="btn btn-success mt-3" href="/cekkendaraan">Kembali</a>
             </div>
         </div>
     </div>

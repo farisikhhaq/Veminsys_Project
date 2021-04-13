@@ -22,6 +22,11 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/', function () {
     return view('auth.login');
 });
+
+Route::get('/dt', function () {
+    return view('Dashboard.DashboardTransaksi');
+});
+
 Route::resource('post', PostController::class);
 Route::get('/data', function () {
     return view('Dashboard.userdata');
@@ -36,7 +41,10 @@ Route::get('/db', function () {
 Route::get('/cekkendaraan', function () {
     return view('CekKendaraan.index');
 });
-Route::get('/cekkendaraan', function () {
+Route::get('/ch', function () {
+    return view('Dashboard.HistoryKendaraan');
+});
+Route::get('/DashboardTransaksi', function () {
     return view('HistoryKendaraan.index');
 });
 Route::resource('cekkendaraan', CekKendaraanController::class);
